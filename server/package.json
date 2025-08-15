@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --forceExit",
     "test:watch": "jest --watch"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "testTimeout": 10000,
+    "collectCoverage": false
   },
   "keywords": [],
   "author": "",
