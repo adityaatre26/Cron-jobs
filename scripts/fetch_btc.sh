@@ -1,5 +1,7 @@
 #!/bin/bash
-cd /mnt/d/Web/cron/scripts
+
+# cd /mnt/d/Web/cron/scripts
+cd /app/scripts
 
 API_URL="https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT"
 OUTPUT_FILE="../data/btc_price.json"

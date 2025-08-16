@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+
+  cron:
+    build: .
+    user: root
+    command: cron -f
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      - web
